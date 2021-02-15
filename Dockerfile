@@ -7,6 +7,7 @@ ENV PYTHONUNBUFFERED 1
 COPY ./requirements.txt /requirements.txt
 RUN pip3 install --upgrade pip                             \
     && pip3 install -r requirements.txt
+
 WORKDIR /usr/local/src         
 RUN git clone https://github.com/HDFGroup/hdf5-json.git  ; \
     cd hdf5-json                                         ; \
@@ -18,8 +19,8 @@ COPY h5serv h5serv
 COPY util util                                         
 COPY test test                                        
 COPY data /data 
-RUN  cp /usr/local/src/hdf5-json/data/hdf5/tall.h5 /data ; \                                      
-     ln -s /data 
+#RUN  cp /usr/local/src/hdf5-json/data/hdf5/tall.h5 /data ; \                                      
+#     ln -s /data 
                               
 EXPOSE 5000 
 
