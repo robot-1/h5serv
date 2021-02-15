@@ -1,0 +1,13 @@
+version: "3"
+
+
+services:
+  h5serv:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/public:/data
+
+
