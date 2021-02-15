@@ -6,7 +6,7 @@ test/unit/*.h5
 test/unit/*.db
 data/
 examples/
-data/public/*
+data/public/*.h5
 test/
 # jetbrains IDE stuff
 .idea
