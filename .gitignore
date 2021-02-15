@@ -4,7 +4,9 @@ data/*.h5
 data/*.db
 test/unit/*.h5
 test/unit/*.db
-
+data/
+examples/
+test/
 # jetbrains IDE stuff
 .idea
 *.iml
